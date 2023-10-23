@@ -1,0 +1,47 @@
+/* Navigation Bar */
+.heading {
+    display: flexbox;
+    flex-direction: row;
+    background: rgb(26, 58, 8);
+    height: 10vh;
+    /* align-content: center; */
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.heading h1 {
+    color: rgb(246,246,246);
+    padding: 2.5vh 0 0 4vh;
+    margin: 0;
+    font-family: 'Lobster', sans-serif;
+    font-size: 2rem;
+}
+
+/* Body */
+body {
+    margin: 0 auto;
+}
+
+/* body h1 {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Section */
+section {
+    min-height: 75vh;
+}
+
+#section1 {
+    background-color: rgb(26,58,8);
+    display: flex;
+}
+
+#section1 h2 {
+    margin: 0;
+    padding: 1rem 0 0 2rem;
+    color: rgb(235,246,238);
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 4rem;
+}
