@@ -208,7 +208,7 @@ footer, footer p {
     }
 
     #section1 {
-        background-image: url("/Images/baCover.jpg");
+        background-image: url("Images/baCover.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
