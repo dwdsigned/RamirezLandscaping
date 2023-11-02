@@ -1,0 +1,216 @@
+/* Body */
+body {
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.heading {
+    display: flex;
+    flex-direction: row;
+    background: rgb(26, 58, 8);
+    height: 10%;
+    position: sticky;
+    top: 0;
+    border-bottom: solid rgb(123,154,118);
+    padding: 0 0 0 2%;
+    margin: 0;
+}
+
+.heading h1 {
+    color: rgb(246,246,246);
+    margin: 0;
+    font-family: 'Lobster', sans-serif;
+    font-size: 1em;
+    padding: .5% 0 1% 0;
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 30px 0 0 200px;
+    color: rgb(235,246,238);
+    font-family: 'Libre Caslon Display', serif;
+    text-decoration: none;
+    list-style: none;
+    float: right;
+}
+
+/* Section 1 */
+.section1-img {
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    height: 240px;
+}
+
+.step1 {
+    margin: 0 0 1% 0;
+    padding: 0;
+    color: rgb(235,246,238);
+    font-size: 1.5em;
+}
+
+.step2 {
+    margin: 0 0 1% 0;
+    padding: 0;
+    color: rgb(215,98,63);
+    font-size: 1.75em;
+}
+
+.step3 {
+    margin: 0;
+    padding: 0;
+    color: rgb(235,246,238);
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Libre Caslon Display', serif;
+    
+}
+
+.btn.quote {
+    background-color: rgb(215,98,63);
+    padding: 0 0 8px 0;
+    width: 8em;
+    height: 4em;
+    font-size: .5em;
+    border-radius: 5px 5px 100px 100px;
+    border: none;
+    font-family: 'Libre Caslon Display', serif;
+    color: rgb(246,246,246);
+}
+
+/* ALL Sections */
+section {
+    padding: .75em .75em .75em .75em;
+    background: rgb(26, 58, 8);
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+}
+
+.sec234 h2 {
+    color: rgb(235,246,238);
+}
+
+p {
+    font-family: 'Libre Franklin', sans-serif;
+    color: rgb(235,246,238);
+}
+
+/* Footer */
+footer, footer p {
+    background: rgb(123,154,118);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 350px) and (max-width:402px) {
+    .section1-img {
+        padding: 0 30px 0 0;
+        margin: 0;
+        width: 135px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 0px) and (max-width:349px) {
+    .section1-img {
+        display: none;
+    }
+
+    .sec1Container {
+        margin: 0;
+        align-items: center;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 700px) and (max-width:2000px) {
+    .heading h1 {
+        color: rgb(246,246,246);
+        padding: 1.25% 0 0 2%;
+        margin: 0;
+        font-family: 'Lobster', sans-serif;
+        font-size: 4vw;
+    }    
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+        background: rgb(26, 58, 8);
+        height: 10%;
+        /* align-content: center; */
+        position: sticky;
+        top: 0;
+        width: 100%;
+        border-bottom: solid rgb(123,154,118);
+        padding: 0 0 1% 0;
+    }
+    .step1 {
+        padding: 0 0 0 8%;
+        color: rgb(235,246,238);
+        font-size: 5vw;
+    }
+    
+    .step2 {
+        padding: 0 0 0 16%;
+        color: rgb(215,98,63);
+        font-size: 6vw;
+    }
+    
+    .step3 {
+        padding: 0 0 0 22%;
+        color: rgb(235,246,238);
+        font-size: 10vw;
+    }
+
+    .section1 p {
+        padding: 0 0 0 22%;
+        font-family: 'Libre Franklin', sans-serif;
+        margin: 0 0 0 5vw;
+        font-size: 4vw;
+        }
+
+    .btn.quote {
+        /* background-color: rgb(215,98,63);
+        padding: 0 0 8px 0;
+        margin: 0 0 0 22%;
+        width: 8em;
+        height: 4em;
+        font-size: .5em;
+        border-radius: 5px 5px 100px 100px;
+        border: none;
+        font-family: 'Libre Caslon Display', serif;
+        color: rgb(246,246,246); */
+        margin: 1vw 0 2.5vw 30%;
+        padding: 0 0 15px 0;
+        width: 8em;
+        height: 4em;
+        font-size: 1.5vw;
+    }
+
+    .section1-img {
+        padding: 0;
+        margin: 0;
+        width: 220px;
+        height: 280px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section1-img {
+        display: none;
+    }
+
+    #section1 {
+        background-image: url("../Images/baCover.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
