@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="CSS/style.css" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <nav>
             <h2>Ramirez Landscaping</h2>
-            <button>Call for a Quote</button>
-            <p>Haga clic aquí para español</p>
+            <button class="btn-qt">Call for a Quote</button>
+            <a href="#"><p>Haga clic aquí para español</p></a>
         </nav>
     </header>
     <main>
@@ -20,7 +24,7 @@
                 Elevate Your Landscape
             </h1>
             <p>Transforming Your Outdoor Space with Expertise and Experience</p>
-            <button>Call for a Quote</button>
+            <button class="btn-qt">Call for a Quote</button>
             <figure><img src="Images/bestCoverPS.png" alt="garden with mulch"></figure>
         </section>
         <section id="section2">
@@ -87,8 +91,8 @@
             </div>
                 <div>
                     <div>
-                        <button>Before</button>
-                        <button>After</button>
+                        <button id="before-btn" class="portNotActive">Before</button>
+                        <button id="after-btn" class="portActive">After</button>
                     </div>
                     <figure>
                         <img src="Images/afterHardscaped.png">
@@ -96,6 +100,6 @@
                 </div>
         </section>
     </main>
-    <footer>Darius Williams</footer>
+    <footer>Created by Darius Williams</footer>
 </body>
 </html>
