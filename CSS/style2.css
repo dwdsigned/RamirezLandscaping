@@ -16,6 +16,47 @@ header {
     background-color: #006837;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li img {
+    max-width: 50%;
+    height: auto;
+}
+
+section {
+    height: 90vh;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:#dfccb3;
+}
+
+.section1 h1 {
+    font-size: 3.4rem;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    margin: .1em 0;
+    text-align: center;
+}
+
+/* .section1 p {
+
+} */
+
+.section1 img {
+    max-width: 100%;
+    height: auto;;
+}
+
 footer {
     grid-column: 1/-1;
     height: 10vh;
