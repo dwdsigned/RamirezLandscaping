@@ -25,6 +25,8 @@ body {
         "top top top"
         "middle middle middle"
         "bottom bottom bottom";
+    grid-template-columns: auto ;
+
 }
 
 
@@ -38,6 +40,10 @@ html {
 
 body {
     margin: 0 auto;
+}
+
+.section1 img {
+    display: none;
 }
 
 header {
