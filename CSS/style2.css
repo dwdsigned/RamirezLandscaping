@@ -38,6 +38,9 @@ section {
     text-align: center;
     font-family: 'Nunito', sans-serif;
     color:#dfccb3;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .section1 h1 {
@@ -54,11 +57,12 @@ section {
 
 .section1 img {
     max-width: 100%;
-    height: auto;;
+    height: auto;
 }
 
 footer {
     grid-column: 1/-1;
     height: 10vh;
     background-color: #006837;
+    grid-row: 0;
 }
