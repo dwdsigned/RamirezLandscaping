@@ -5,13 +5,18 @@ html {
 body {
     margin: 0 auto;
     background-color: #42210B;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; */
+}
+
+main {
+    background-color: #47311A;
+    margin: 0 1em 0 1em;
 }
 
 header {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
     height: 10vh;
     background-color: #006837;
 }
@@ -34,6 +39,7 @@ li img {
 }
 
 section {
+    /* grid-column: 1/-1; */
     height: 90vh;
     text-align: center;
     font-family: 'Nunito', sans-serif;
@@ -44,7 +50,7 @@ section {
 }
 
 .section1 h1 {
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: #ffffff;
     font-family: 'Playfair Display', serif;
     margin: .1em 0;
@@ -56,13 +62,24 @@ section {
 } */
 
 .section1 img {
-    max-width: 100%;
-    height: auto;
+    /* display: none; */
+    width: 353px;
+    height: 471px;
+}
+
+.elevate {
+    min-width: 50%;
+}
+
+.section1 {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 
 footer {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
     height: 10vh;
     background-color: #006837;
-    grid-row: 0;
+    /* grid-row: 0; */
 }

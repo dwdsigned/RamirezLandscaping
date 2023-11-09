@@ -1,0 +1,11 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #42210B;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr; */
+}
