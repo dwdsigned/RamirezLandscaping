@@ -1,11 +1,72 @@
+section {
+    border: 3px solid red;
+}
+
+header, footer {
+    border: 3px solid green;
+}
+
+body {
+    border: 3px solid yellow;
+}
+
+main {
+    border: 3px solid purple;
+}
+
+div {
+    border: 3px solid orange;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "top top top"
+        "middle middle middle"
+        "bottom bottom bottom";
+}
+
+
+
+
+
+
 html {
     font-size: 62.5%;
 }
 
 body {
     margin: 0 auto;
-    background-color: #42210B;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 1fr; */
+}
+
+header {
+    grid-area: top;
+    background-color: #006837;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    margin-left: auto;
+}
+
+footer {
+    grid-area: bottom;
+    background-color: #006837;
+    height: 10vh;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
 }
