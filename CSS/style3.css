@@ -90,6 +90,7 @@ nav button {
     color: rgb(235, 235, 235);
     background-color: rgb(210, 150, 45);
     font-family: Playfair display;
+    border-color: rgb(210, 150, 45);
 }
 
 a.spanish:link {
