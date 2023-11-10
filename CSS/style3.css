@@ -133,7 +133,6 @@ figure {
 
 .elevate {
     text-align: center;
-    max-width: 80%;
 }
 
 .elevate h1 {
@@ -155,6 +154,24 @@ figure {
 
 .buttonMargin {
     margin-bottom: 2em;
+}
+
+.portfolioCar {
+    position: relative;
+}
+
+.portDir {
+    border-radius: 30px;
+    position: absolute;
+}
+
+.portLeft {
+    top: 50%;
+}
+
+.portRight {
+    top: 50%;
+    margin: 0;
 }
 
 footer {
