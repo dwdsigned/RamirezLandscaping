@@ -32,10 +32,6 @@ body {
 }
 
 
-
-
-
-
 html {
     font-size: 62.5%;
 }
@@ -44,11 +40,7 @@ body {
     margin: 0 auto;
 }
 
-main p {
-    font-family: 'Nunito', sans-serif;
-    color:#dfccb3;
-    font-size: 2rem;
-}
+
 
 header {
     grid-area: top;
@@ -114,8 +106,18 @@ main {
     padding: .2em;
 }
 
+main h2 {
+    font-size: 2.4rem;
+}
+
 h1, h2 {
     color: rgb(235, 235, 235);
+}
+
+main p {
+    font-family: 'Nunito', sans-serif;
+    color:#dfccb3;
+    font-size: 2rem;
 }
 
 /* .section1 {
@@ -124,11 +126,10 @@ h1, h2 {
     flex-wrap: wrap;
 } */
 
-
-
-.section1 figure {
+/* .section1 figure {
     display: none;
-}
+    width: fit-content;
+} */
 
 figure {
     margin: 0 auto;
@@ -143,6 +144,17 @@ figure {
 .elevate h1 {
     font-size: 2.45rem;
     max-width: 100%;
+}
+
+.elevate button {
+    border-radius: 30px 0;
+    font-size: 1.5rem;
+    padding: .5em;
+    margin-bottom: .35em;
+    color: rgb(230, 230, 230);
+    background-color: rgb(210, 150, 45);
+    font-family: 'Playfair Display', serif;
+    border-color: rgb(210, 150, 45);
 }
 
 .center {
