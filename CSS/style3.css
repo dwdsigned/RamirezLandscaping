@@ -128,8 +128,9 @@ h1, h2 {
 }
 
 figure {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: fit-content;
 }
 
 .elevate {
@@ -159,12 +160,21 @@ figure {
 
 .portfolioCar {
     position: relative;
+    /* Border for portfolio figure element */
+    /* border: 6px solid orange; */
 }
+
+/* Border for portfolio div */
+/* .portDiv {
+    border: 6px solid white;
+} */
+
 
 .portDir {
     border-radius: 30px;
     position: absolute;
 }
+
 
 .portLeft {
     top: 50%;
@@ -172,7 +182,7 @@ figure {
 
 .portRight {
     top: 50%;
-    margin: 0;
+    right: 2px;
 }
 
 footer {
