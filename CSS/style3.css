@@ -47,6 +47,7 @@ body {
 main p {
     font-family: 'Nunito', sans-serif;
     color:#dfccb3;
+    font-size: 2rem;
 }
 
 header {
@@ -87,9 +88,9 @@ nav button {
     font-size: 1.5rem;
     padding: .5em;
     margin-bottom: .35em;
-    color: rgb(235, 235, 235);
+    color: rgb(230, 230, 230);
     background-color: rgb(210, 150, 45);
-    font-family: Playfair display;
+    font-family: 'Playfair Display', serif;
     border-color: rgb(210, 150, 45);
 }
 
@@ -109,6 +110,8 @@ a.spanish:active {
 main {
     background-color: #47311A;
     grid-area: middle;
+    margin: 0 1em;
+    padding: .2em;
 }
 
 h1, h2 {
@@ -138,7 +141,7 @@ figure {
 }
 
 .elevate h1 {
-    font-size: 2rem;
+    font-size: 2.45rem;
     max-width: 100%;
 }
 
@@ -156,6 +159,30 @@ figure {
 
 .buttonMargin {
     margin-bottom: 2em;
+}
+
+#before-btn {
+    border-radius: 30px 0 0 30px;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    text-align: center;
+}
+
+#after-btn {
+    border-radius: 0 30px 30px 0;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    text-align: center;
+}
+
+.portActive {
+    background-color: #D1952C;
+    color: rgb(235, 235, 235);
+}
+
+.portNotActive {
+    background-color: #C19A6B;
+    color: rgb(35, 35,35);
 }
 
 .portfolioCar {
@@ -182,7 +209,7 @@ figure {
 
 .portRight {
     top: 50%;
-    right: 2px;
+    right: .1px;
 }
 
 footer {
