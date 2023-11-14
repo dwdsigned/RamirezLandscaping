@@ -55,7 +55,9 @@ function backwardImages() {
 }
 
 function forwardImages() {
-    i=
-    i++;
+    // Change or look at line below
+    i=0;
     images[i];
+    console.log(images[i]);
+    i++;
 }
