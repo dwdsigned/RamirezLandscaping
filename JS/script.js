@@ -38,3 +38,24 @@ const images = [
     },
 ]
 
+console.log(images[3].after);
+
+// function forwardImages() {
+//     for (i=0; i < images.length; i++) {
+//         images[i];
+//         console.log(images[i]);
+//     };
+// }
+
+function backwardImages() {
+    for (i=0; i < 0; i--) {
+        images[i];
+        console.log(images[i]);
+    };
+}
+
+function forwardImages() {
+    i=
+    i++;
+    images[i];
+}
