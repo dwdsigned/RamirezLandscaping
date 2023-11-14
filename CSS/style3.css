@@ -232,7 +232,7 @@ hr {
 }
 
 
-.portLeft {
+#portLeft {
     top: 50%;
     font-size: 5rem;
     color: rgba(200,200,200,.7);
@@ -240,7 +240,7 @@ hr {
     border: none;
 }
 
-.portRight {
+#portRight {
     top: 50%;
     right: .1px;
     font-size: 5rem;
