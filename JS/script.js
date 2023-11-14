@@ -21,7 +21,20 @@ console.log(rightArrow);
 // Images
 const images = [
     {
-        
-    }
+        before: "Images/beforeSod.png",
+        after: "Images/afterSod.png",
+    },
+    {
+        before: "Images/beforeHardscaped.png",
+        after: "Images/afterHardscaped.png",
+    },
+    {
+        before: "Images/beforeHouseSod.png",
+        after: "Images/afterHouseSod.png",
+    },
+    {
+        before: "Images/beforeGarden.png",
+        after: "Images/afterGarden.png",
+    },
 ]
 
