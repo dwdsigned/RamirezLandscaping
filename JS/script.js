@@ -121,7 +121,7 @@ const images = [
                             // console.log(images[imagesIndex].before);
 
                             // After
-                            console.log(images[imagesIndex].after);
+                            // console.log(images[imagesIndex].after);
                             
                             
                             function afterTest() {
