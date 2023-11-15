@@ -1,52 +1,56 @@
-//Global variable
-let imagesIndex = 0;
+//Global variables
 
-// Img Element for port
-const portImg = document.querySelector("#portImg");
-//console.log(portImg);
+    // Provides a way to access objects in the images array
+    let imagesIndex = 0;
 
-// Before button
-const beforeButton = document.querySelector("#before-btn");
-//console.log(beforeButton);
-const beforeStatus = beforeButton.getAttribute("class");
+    // Img Element for port
+    const portImg = document.querySelector("#portImg");
+    //console.log(portImg);
 
-// After button
-const afterButton = document.querySelector("#after-btn");
-//console.log(afterButton);
-const afterStatus = afterButton.getAttribute("class");
+    // Before button
+    const beforeButton = document.querySelector("#before-btn");
+    //console.log(beforeButton);
+    const beforeStatus = beforeButton.getAttribute("class");
 
-// Backward/left arrow button
-const backwardButton = document.querySelector("#portLeft");
-//console.log(backwardButton);
+    // After button
+    const afterButton = document.querySelector("#after-btn");
+    //console.log(afterButton);
+    const afterStatus = afterButton.getAttribute("class");
 
-// Backward/Right arrow button
-const forwardButton = document.querySelector("#portRight");
-//console.log(forwardButton);
+    // Backward/left arrow button
+    const backwardButton = document.querySelector("#portLeft");
+    //console.log(backwardButton);
 
-// Images
-const images = [
-    {
-        before: "Images/beforeSod.png",
-        after: "Images/afterSod.png",
-    },
-    {
-        before: "Images/beforeHardscaped.png",
-        after: "Images/afterHardscaped.png",
-    },
-    {
-        before: "Images/beforeHouseSod.png",
-        after: "Images/afterHouseSod.png",
-    },
-    {
-        before: "Images/beforeGarden.png",
-        after: "Images/afterGarden.png",
-    },
-]
+    // Backward/Right arrow button
+    const forwardButton = document.querySelector("#portRight");
+    //console.log(forwardButton);
 
-// images[imagesIndex];
+    // Images
+    const images = [
+        {
+            before: "Images/beforeSod.png",
+            after: "Images/afterSod.png",
+        },
+        {
+            before: "Images/beforeHardscaped.png",
+            after: "Images/afterHardscaped.png",
+        },
+        {
+            before: "Images/beforeHouseSod.png",
+            after: "Images/afterHouseSod.png",
+        },
+        {
+            before: "Images/beforeGarden.png",
+            after: "Images/afterGarden.png",
+        },
+    ]
 
-// Forward button function
-function forwardImages() {
+//**********************************************************/
+
+
+// Forward button
+    //function
+    function forwardImages() {
     if (imagesIndex === 0 || imagesIndex <= images.length-3) {
         imagesIndex++;
         if (afterStatus === "portActive") {
@@ -75,9 +79,16 @@ function forwardImages() {
         console.log("disabled forward button");
     }
 }
+    //event listener
+    forwardButton.addEventListener("click", forwardImages);
 
-// Backward button function
-function backwardImages() {
+
+//**********************************************************/
+
+
+// Backward button
+    //function
+    function backwardImages() {
     if (imagesIndex === 1) {
         imagesIndex--;
         if (afterStatus === "portActive") {
@@ -104,10 +115,15 @@ function backwardImages() {
         console.log("enabled forward button");
     }
 }
+    //event listener
+    backwardButton.addEventListener("click", backwardImages);
+
+    //**********************************************************/
 
 
-// After Button function
-function afterTest() {
+// After Button
+    //function
+    function afterTest() {
     if (afterStatus === "portActive") {
         //console.log("it's active");
         return
@@ -129,12 +145,16 @@ function afterTest() {
         // Change class of beforeButton to `portNotActive`
     }
 }
+    //event listener
+    afterButton.addEventListener("click", afterTest);
 
-// After button event listener
-afterButton.addEventListener("click", afterTest);
 
-// Before button function
-function beforeTest() {
+    //**********************************************************/
+
+
+// Before button
+    //function
+    function beforeTest() {
     if (beforeStatus === "portActive") {
         //console.log("it's active");
         return
@@ -156,6 +176,5 @@ function beforeTest() {
         // Change class of afterButton to `portNotActive`
     }
 }
-
-// Before button event listener
-beforeButton.addEventListener("click", beforeTest);
+    //event listener
+    beforeButton.addEventListener("click", beforeTest);
