@@ -126,21 +126,25 @@
     function afterTest() {
     if (afterStatus === "portActive") {
         //console.log("it's active");
-        return
+        //return
         
     } else {
         //console.log(`it's not active`);
         // Set image of portImg by attribute, src, to `images[imagesIndex].after`
         portImg.setAttribute("src", `${images[imagesIndex].after}`);
         // Maybe use template literals
-        // Disable afterButton
-        afterButton.setAttribute("disabled", "");
         // remove disable on beforeButton
         beforeButton.removeAttribute("disabled");
+        // Test***
+        afterButton.removeAttribute("portNotActive");
+        afterButton.setAttribute("class", "portActive");
+        // Test***^^^
         // Remove `portNotActive` class and replace with `portActive`
         afterButton.removeAttribute("portNotActive");
         afterButton.setAttribute("class", "portActive");
         //console.log(`it's active now`);
+        // Disable afterButton
+        afterButton.setAttribute("disabled", "");
         //console.log("After button has been disabled");
         // Change class of beforeButton to `portNotActive`
     }
@@ -157,20 +161,24 @@
     function beforeTest() {
     if (beforeStatus === "portActive") {
         //console.log("it's active");
-        return
+        //return
         
     } else {
         console.log(`it's not active`);
         // Set image of portImg by attribute, src, to `images[imagesIndex].before`
         portImg.setAttribute("src", `${images[imagesIndex].before}`);
         // Maybe use template literals
-        // Disable beforeButton
-        beforeButton.setAttribute("disabled", "");
         // remove disable on afterButton
         afterButton.removeAttribute("disabled");
+        // Test***
+        afterButton.removeAttribute("portActive");
+        afterButton.setAttribute("class", "portNotActive");
+        // Test***^^^
         // Remove `portNotActive` class and replace with `portActive`
         beforeButton.removeAttribute("portNotActive");
         beforeButton.setAttribute("class", "portActive");
+        // Disable beforeButton
+        beforeButton.setAttribute("disabled", "");
         //console.log(`it's active now`);
         //console.log("beforeButton has been disabled");
         // Change class of afterButton to `portNotActive`
