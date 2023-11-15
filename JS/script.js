@@ -41,54 +41,86 @@ const images = [
     },
 ]
 
-console.log(images[imagesIndex].after);
-console.log(images[imagesIndex].before);
 
 // function forwardImages() {
-//     for (i=0; i < images.length; i++) {
-//         images[i];
-//         console.log(images[i]);
-//     };
-// }
+    //     for (i=0; i < images.length; i++) {
+        //         images[i];
+        //         console.log(images[i]);
+        //     };
+        // }
+        
+        // function backwardImages() {
+            //     imagesIndex--;
+            // }
+            
+            
+            // Add
+            // function forwardImages() {
+                //     imagesIndex++;
+                //     // Change src for image
+                // }
+                
+                // if (imagesIndex === 0 || imagesIndex <= images.length-2 ) {
+                    //     forwardImages();
+                    //     // Make sure button is enabled
+                    
+                    // } else {
+                        //     // disable and/or hide button
+                        //     console.log("disabled forward button")
+                        // }
+                        
+                        // Subtract
+                        // if (imagesIndex > 0) {
+                            //     imagesIndex--;
+                            // } else {}
+                            
+                            // imagesIndex === images.length-1
+                            // console.log(images.length-2);
+                            
+                            
+                            
+                            // Forward button function
+                            function forwardImages() {
+                                if (imagesIndex === 0 || imagesIndex <= images.length-3) {
+                                    imagesIndex++;
+                                    // Make sure backward button is enabled
+                                    console.log("enabled backward button");
+                                    
+                                } else {
+                                    // disable and/or hide button
+                                    imagesIndex++
+                                    console.log(imagesIndex);
+                                    console.log("disabled forward button");
+                                }
+                            }
+                            
+                            
+                            // Backward button function
+                            function backwardImages() {
+                                if (imagesIndex === 1) {
+                                    imagesIndex--;
+                                    console.log("disable backward button");
+                                } else {
+                                    imagesIndex--;
+                                    console.log("enabled forward button");
+                                }
+                            }
+                            
 
-function backwardImages() {
-    imagesIndex--;
-}
-
-// function forwardImages() {
-//     imagesIndex++;
-//     // Change src for image
-// }
-
-// if (imagesIndex === 0 || imagesIndex <= images.length-2 ) {
-//     forwardImages();
-//     // Make sure button is enabled
-
-// } else {
-//     // disable and/or hide button
-//     console.log("disabled forward button")
-// }
-
-if (imagesIndex > 0) {
-    imagesIndex--;
-} else {}
-
-// imagesIndex === images.length-1
-console.log(images.length-2);
 
 
 
 
-function forwardImages() {
-    if (imagesIndex === 0 || imagesIndex <= images.length-3) {
-        imagesIndex++;
-        // Make sure button is enabled
-    
-    } else {
-        // disable and/or hide button
-        imagesIndex++
-        console.log(imagesIndex);
-        console.log("disabled forward button");
-    }
-}
 
+
+
+
+                            // console.log(images[imagesIndex].after);
+                            // console.log(images[imagesIndex].before);
+
+                            // After
+                            console.log(images[imagesIndex].after);
+                            
+                            
+                            // Before
+                            console.log(images[imagesIndex].before);
