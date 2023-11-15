@@ -1,3 +1,6 @@
+//Global variable
+let imagesIndex = 0;
+
 // Img Element
 const portImg = document.querySelector("#portImg");
 console.log(portImg);
@@ -38,7 +41,8 @@ const images = [
     },
 ]
 
-console.log(images[3].after);
+console.log(images[imagesIndex].after);
+console.log(images[imagesIndex].before);
 
 // function forwardImages() {
 //     for (i=0; i < images.length; i++) {
@@ -48,16 +52,26 @@ console.log(images[3].after);
 // }
 
 function backwardImages() {
-    for (i=0; i < 0; i--) {
-        images[i];
-        console.log(images[i]);
-    };
+    imagesIndex--;
 }
 
 function forwardImages() {
-    // Change or look at line below
-    i=0;
-    images[i];
-    console.log(images[i]);
-    i++;
+    imagesIndex++;
+    // Change src for image
 }
+
+if (imagesIndex === 0 || imagesIndex <= images.length-2 ) {
+    forwardImages();
+    // Make sure button is enabled
+
+} else {
+    // disable and/or hide button
+    
+}
+
+if (imagesIndex > 0) {
+    imagesIndex--;
+} else {}
+
+// imagesIndex === images.length-1
+console.log(images.length-2);
