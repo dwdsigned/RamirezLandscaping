@@ -55,19 +55,19 @@ function backwardImages() {
     imagesIndex--;
 }
 
-function forwardImages() {
-    imagesIndex++;
-    // Change src for image
-}
+// function forwardImages() {
+//     imagesIndex++;
+//     // Change src for image
+// }
 
-if (imagesIndex === 0 || imagesIndex <= images.length-2 ) {
-    forwardImages();
-    // Make sure button is enabled
+// if (imagesIndex === 0 || imagesIndex <= images.length-2 ) {
+//     forwardImages();
+//     // Make sure button is enabled
 
-} else {
-    // disable and/or hide button
-    
-}
+// } else {
+//     // disable and/or hide button
+//     console.log("disabled forward button")
+// }
 
 if (imagesIndex > 0) {
     imagesIndex--;
@@ -75,3 +75,20 @@ if (imagesIndex > 0) {
 
 // imagesIndex === images.length-1
 console.log(images.length-2);
+
+
+
+
+function forwardImages() {
+    if (imagesIndex === 0 || imagesIndex <= images.length-3) {
+        imagesIndex++;
+        // Make sure button is enabled
+    
+    } else {
+        // disable and/or hide button
+        imagesIndex++
+        console.log(imagesIndex);
+        console.log("disabled forward button");
+    }
+}
+
