@@ -114,8 +114,12 @@ function afterTest() {
         portImg.setAttribute("src", `${images[imagesIndex].after}`);
         // Maybe use template literals
         // Disable afterButton
+        afterButton.setAttribute("disabled", "");
         // remove disable on beforeButton
+        beforeButton.removeAttribute("disabled")
         // Remove `portNotActive` class and replace with `portActive`
+        afterButton.removeAttribute("portNotActive");
+        afterButton.setAttribute("class", "portActive");
         console.log(`it's active now`);
         console.log("After button has been disabled");
         // Change class of beforeButton to `portNotActive`
