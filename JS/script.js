@@ -3,25 +3,25 @@ let imagesIndex = 0;
 
 // Img Element for port
 const portImg = document.querySelector("#portImg");
-console.log(portImg);
+//console.log(portImg);
 
 // Before button
 const beforeButton = document.querySelector("#before-btn");
-console.log(beforeButton);
+//console.log(beforeButton);
 const beforeStatus = beforeButton.getAttribute("class");
 
 // After button
 const afterButton = document.querySelector("#after-btn");
-console.log(afterButton);
+//console.log(afterButton);
 const afterStatus = afterButton.getAttribute("class");
 
-// Left/backward arrow button
+// Backward/left arrow button
 const backwardButton = document.querySelector("#portLeft");
-console.log(backwardButton);
+//console.log(backwardButton);
 
-// Right arrow button
+// Backward/Right arrow button
 const forwardButton = document.querySelector("#portRight");
-console.log(forwardButton);
+//console.log(forwardButton);
 
 // Images
 const images = [
@@ -130,6 +130,8 @@ function afterTest() {
     }
 }
 
+// After button event listener
+afterButton.addEventListener("click", afterTest);
 
 // Before button function
 function beforeTest() {
@@ -154,3 +156,6 @@ function beforeTest() {
         // Change class of afterButton to `portNotActive`
     }
 }
+
+// Before button event listener
+beforeButton.addEventListener("click", beforeTest);
