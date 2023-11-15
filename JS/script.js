@@ -1,7 +1,7 @@
 //Global variable
 let imagesIndex = 0;
 
-// Img Element
+// Img Element for port
 const portImg = document.querySelector("#portImg");
 console.log(portImg);
 
@@ -43,170 +43,101 @@ const images = [
     },
 ]
 
+images[imagesIndex];
 
-// function forwardImages() {
-    //     for (i=0; i < images.length; i++) {
-        //         images[i];
-        //         console.log(images[i]);
-        //     };
-        // }
+// Forward button function
+function forwardImages() {
+    if (imagesIndex === 0 || imagesIndex <= images.length-3) {
+        imagesIndex++;
+        if (afterStatus === "portActive") {
+            portImg.setAttribute("src", `${images[imagesIndex].after}`);
+            //console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
+        } else {
+            portImg.setAttribute("src", `${images[imagesIndex].before}`);
+        }
+        // Make sure backward button is enabled
+        console.log("enabled backward button");
         
-        // function backwardImages() {
-            //     imagesIndex--;
-            // }
-            
-            
-            // Add
-            // function forwardImages() {
-                //     imagesIndex++;
-                //     // Change src for image
-                // }
-                
-                // if (imagesIndex === 0 || imagesIndex <= images.length-2 ) {
-                    //     forwardImages();
-                    //     // Make sure button is enabled
-                    
-                    // } else {
-                        //     // disable and/or hide button
-                        //     console.log("disabled forward button")
-                        // }
-                        
-                        // Subtract
-                        // if (imagesIndex > 0) {
-                            //     imagesIndex--;
-                            // } else {}
-                            
-                            // imagesIndex === images.length-1
-                            // console.log(images.length-2);
-                            
-                            
-                            
-                            // Forward button function
-                            function forwardImages() {
-                                if (imagesIndex === 0 || imagesIndex <= images.length-3) {
-                                    imagesIndex++;
-                                    // Make sure backward button is enabled
-                                    console.log("enabled backward button");
-                                    
-                                } else {
-                                    // disable and/or hide button
-                                    imagesIndex++
-                                    console.log(imagesIndex);
-                                    console.log("disabled forward button");
-                                }
-                            }
-                            
-                            
-                            // Backward button function
-                            function backwardImages() {
-                                if (imagesIndex === 1) {
-                                    imagesIndex--;
-                                    console.log("disable backward button");
-                                } else {
-                                    imagesIndex--;
-                                    console.log("enabled forward button");
-                                }
-                            }
-                            
+    } else {
+        // disable and/or hide button
+        imagesIndex++
+        console.log(imagesIndex);
+        if (afterStatus === "portActive") {
+            portImg.setAttribute("src", `${images[imagesIndex].after}`);
+            console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
+        } else {
+        portImg.setAttribute("src", `${images[imagesIndex].before}`);
+        console.log(portImg.setAttribute("src", `${images[imagesIndex].before}`));
+        }
+        // Add something to disable button here.
+        console.log("disabled forward button");
+    }
+}
+
+// Backward button function
+function backwardImages() {
+    if (imagesIndex === 1) {
+        imagesIndex--;
+        if (afterStatus === "portActive") {
+            portImg.setAttribute("src", `${images[imagesIndex].after}`);
+            //console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
+        } else {
+            portImg.setAttribute("src", `${images[imagesIndex].before}`);
+            //console.log(portImg.setAttribute("src", `${images[imagesIndex].before}`));
+        }
+        // Disable backward button here
+        console.log("disable backward button");
+    } else {
+        imagesIndex--;
+        if (afterStatus === "portActive") {
+            portImg.setAttribute("src", `${images[imagesIndex].after}`);
+            //console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
+        } else {
+        portImg.setAttribute("src", `${images[imagesIndex].before}`);
+        //console.log(portImg.setAttribute("src", `${images[imagesIndex].before}`));
+        }
+        // Enable forward button here
+        console.log("enabled forward button");
+    }
+}
 
 
+// After Button function
+function afterTest() {
+    if (afterStatus === "portActive") {
+        //console.log("it's active");
+        return
+        
+    } else {
+        console.log(`it's not active`);
+        // Set image of portImg by attribute, src, to `images[imagesIndex].after`
+        portImg.setAttribute("src", `${images[imagesIndex].after}`);
+        // Maybe use template literals
+        // Disable afterButton
+        // remove disable on beforeButton
+        // Remove `portNotActive` class and replace with `portActive`
+        console.log(`it's active now`);
+        console.log("After button has been disabled");
+        // Change class of beforeButton to `portNotActive`
+    }
+}
 
 
-
-
-
-
-
-                            // console.log(images[imagesIndex].after);
-                            // console.log(images[imagesIndex].before);
-
-                            // After
-                            // console.log(images[imagesIndex].after);
-                            
-                            
-                            function afterTest() {
-                                if (afterStatus === "portActive") {
-                                    //console.log("it's active");
-                                    return
-                                    
-                                } else {
-                                    console.log(`it's not active`);
-                                    // Set image of portImg by attribute, src, to `images[imagesIndex].after`
-                                    // Maybe use template literals
-                                    // Disable afterButton
-                                    // remove disable on beforeButton
-                                    // Remove `portNotActive` class and replace with `portActive`
-                                    console.log(`it's active now`);
-                                    console.log("After button has been disabled");
-                                    // Change class of beforeButton to `portNotActive`
-                                }
-                                
-                            }
-                            
-                            // Before
-                            // console.log(images[imagesIndex].before);
-
-                            function beforeTest() {
-                                if (beforeStatus === "portActive") {
-                                    //console.log("it's active");
-                                    return
-                                    
-                                } else {
-                                    console.log(`it's not active`);
-                                    // Set image of portImg by attribute, src, to `images[imagesIndex].before`
-                                    // Maybe use template literals
-                                    // Disable beforeButton
-                                    // remove disable on afterButton
-                                    // Remove `portNotActive` class and replace with `portActive`
-                                    console.log(`it's active now`);
-                                    console.log("beforeButton has been disabled");
-                                    // Change class of afterButton to `portNotActive`
-                                }
-                            }
-
-
-
-
-
-                            // function beforeTest() {
-                            //     if (beforeStatus === "portActive") {
-                            //         console.log("it's active");
-                            //         // Set image of portImg by attribute src to `images[imagesIndex].before`
-                            //         // Maybe use template literals
-                            //         // Disable before button
-                            //         console.log("Before button has been disabled")
-                            //     } else {
-                            //         console.log("it's not active");
-                            //     }
-                            // }
-
-
-
-                            // function beforeTest2() {
-                            //     if (beforeStatus === "portNotActive") {
-                            //         //console.log("it's active");
-                            //         return
-                                    
-                            //     } else {
-                            //         console.log(`it's not active`);
-                            //         // Set image of portImg by attribute src to `images[imagesIndex].after`
-                            //         // Maybe use template literals
-                            //         // Disable afterButton
-                            //         // Remove `portNotActive` class and replace with `portActive`
-                            //         console.log(`it's active now`);
-                            //         console.log("After button has been disabled")
-                            //     }
-                            // }
-                            
-
-
-
-
-
-
-
-
-
-
-                            // beforeTest();
-                            // afterTest();
+// Before button function
+function beforeTest() {
+    if (beforeStatus === "portActive") {
+        //console.log("it's active");
+        return
+        
+    } else {
+        console.log(`it's not active`);
+        // Set image of portImg by attribute, src, to `images[imagesIndex].before`
+        // Maybe use template literals
+        // Disable beforeButton
+        // remove disable on afterButton
+        // Remove `portNotActive` class and replace with `portActive`
+        console.log(`it's active now`);
+        console.log("beforeButton has been disabled");
+        // Change class of afterButton to `portNotActive`
+    }
+}
