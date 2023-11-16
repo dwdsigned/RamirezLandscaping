@@ -267,6 +267,10 @@ footer {
         color: rgb(35, 35,35);
     }
 
+    #callButton {
+        display: none;
+    }
+
     #constructionMessage {
         display: block;
         font-size: 6rem;
