@@ -10,12 +10,10 @@
     // Before button
     const beforeButton = document.querySelector("#before-btn");
     //console.log(beforeButton);
-    const beforeStatus = beforeButton.getAttribute("class");
 
     // After button
     const afterButton = document.querySelector("#after-btn");
     //console.log(afterButton);
-    const afterStatus = afterButton.getAttribute("class");
 
     // Backward/left arrow button
     const backwardButton = document.querySelector("#portLeft");
@@ -53,7 +51,7 @@
     function forwardImages() {
     if (imagesIndex === 0 || imagesIndex <= images.length-3) {
         imagesIndex++;
-        if (afterStatus === "portActive") {
+        if ("portActive" === afterButton.getAttribute("class")) {
             portImg.setAttribute("src", `${images[imagesIndex].after}`);
             //console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
         } else {
@@ -67,7 +65,7 @@
         // disable and/or hide button
         imagesIndex++
         console.log(imagesIndex);
-        if (afterStatus === "portActive") {
+        if ("portActive" === afterButton.getAttribute("class")) {
             portImg.setAttribute("src", `${images[imagesIndex].after}`);
             console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
         } else {
@@ -91,7 +89,7 @@
     function backwardImages() {
     if (imagesIndex === 1) {
         imagesIndex--;
-        if (afterStatus === "portActive") {
+        if ("portActive" === afterButton.getAttribute("class")) {
             portImg.setAttribute("src", `${images[imagesIndex].after}`);
             //console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
         } else {
@@ -103,7 +101,7 @@
         console.log("disable backward button");
     } else {
         imagesIndex--;
-        if (afterStatus === "portActive") {
+        if ("portActive" === afterButton.getAttribute("class")) {
             portImg.setAttribute("src", `${images[imagesIndex].after}`);
             //console.log(portImg.setAttribute("src", `${images[imagesIndex].after}`));
         } else {
@@ -124,20 +122,24 @@
 // After Button
     //function
     function afterTest() {
-    if (afterStatus === "portActive") {
-        //console.log("it's active");
+    if ("portActive" === afterButton.getAttribute("class")) {
+        console.log("after button is already active");
+        console.log("before button is inactive");
+        beforeButton.removeAttribute("disabled");
+        beforeButton.removeAttribute("portActive");
+        beforeButton.setAttribute("class", "portNotActive");
+        afterButton.setAttribute("disabled", "");
         //return
         
     } else {
-        //console.log(`it's not active`);
+        console.log(`after button is not active`);
+        console.log(`after button will be actived`);
         // Set image of portImg by attribute, src, to `images[imagesIndex].after`
         portImg.setAttribute("src", `${images[imagesIndex].after}`);
         // Maybe use template literals
-        // remove disable on beforeButton
-        beforeButton.removeAttribute("disabled");
         // Test***
-        afterButton.removeAttribute("portNotActive");
-        afterButton.setAttribute("class", "portActive");
+        beforeButton.removeAttribute("portActive");
+        beforeButton.setAttribute("class", "portNotActive");
         // Test***^^^
         // Remove `portNotActive` class and replace with `portActive`
         afterButton.removeAttribute("portNotActive");
@@ -147,6 +149,8 @@
         afterButton.setAttribute("disabled", "");
         //console.log("After button has been disabled");
         // Change class of beforeButton to `portNotActive`
+        // remove disable on beforeButton
+        beforeButton.removeAttribute("disabled");
     }
 }
     //event listener
@@ -159,17 +163,20 @@
 // Before button
     //function
     function beforeTest() {
-    if (beforeStatus === "portActive") {
-        //console.log("it's active");
+    if ("portActive" === beforeButton.getAttribute("class")) {
+        console.log("before is already active");
+        console.log("after is inactive");
+        afterButton.removeAttribute("disabled");
+        afterButton.removeAttribute("portActive");
+        afterButton.setAttribute("class", "portNotActive");
+        beforeButton.setAttribute("disabled", "");
         //return
         
     } else {
-        console.log(`it's not active`);
+        console.log(`before is not active`);
         // Set image of portImg by attribute, src, to `images[imagesIndex].before`
         portImg.setAttribute("src", `${images[imagesIndex].before}`);
         // Maybe use template literals
-        // remove disable on afterButton
-        afterButton.removeAttribute("disabled");
         // Test***
         afterButton.removeAttribute("portActive");
         afterButton.setAttribute("class", "portNotActive");
@@ -179,9 +186,11 @@
         beforeButton.setAttribute("class", "portActive");
         // Disable beforeButton
         beforeButton.setAttribute("disabled", "");
-        //console.log(`it's active now`);
+        console.log(`before button is now active now`);
         //console.log("beforeButton has been disabled");
         // Change class of afterButton to `portNotActive`
+        // remove disable on afterButton
+        afterButton.removeAttribute("disabled");
     }
 }
     //event listener
