@@ -7,10 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<!-- <link href="#" rel="stylesheet"> -->
-<!-- <link href="CSS/header/header.css" rel="stylesheet">
-<link href="CSS/section/section.css" rel="stylesheet">
-<link href="CSS/footer/footer.css" rel="stylesheet"> -->
 <link href="CSS/style3.css" rel="stylesheet">
 </head>
 <body>
@@ -18,19 +14,19 @@
         <nav>
             <img src="Images/TypeLogoShadow.png" alt="Ramirez Landscaping logo" width="205" height="34" class="logoImg">
             <ul>
-                <li><button class="btn-qt qt1">Call for a Quote</button></li>
+                <li><a href="tel:+18646023647" target="_blank"><button id="firstCallButton" class="btn-qt qt1">Call for a Quote</button></a></li>
+                <li><a href="https://www.facebook.com/messages/t/100019698247988/" target="_blank"><button id="messageButton" class="btn-qt qt1 doNotDisplay">Message for a Quote</button></a></li>
                 <li ><a href="#" class="spanish">Haga clic aquí para español</a></li>
             </ul>
         </nav>
     </header>
-    <p id="constructionMessage" class="doNotDisplay">This Website is currently under construction; please view it on a device with a smaller screen until we finish construction of this website.</p>
+    <p id="constructionMessage" class="doNotDisplay">This Website is currently under construction; please view it on a device with a smaller screen, or in portrait mode, until we finish construction of this website.</p>
     <main>
         <section id="section1" class="section1">
             <div class="elevate">
                 <h1>Elevate Your Landscape</h1>
                 <p>Transforming Your Outdoor Space with Expertise and Experience</p>
-                <button id="callButton" class="btn-qt">Call for a Quote</button>
-                <button id="messageButton" class="btn-qt doNotDisplay">Message for a Quote</button>
+                <button class="btn-qt">Call for a Quote</button>
             </div>
             <figure><img src="Images/afterGarden.png" alt="garden with mulch" width="254" height="338"></figure>
         </section>
@@ -112,7 +108,10 @@
                 </div>
         </section>
     </main>
-    <footer><p class="center">Website by Darius Williams</p></footer>
+    <footer>
+        <p class="center">Website by Darius Williams</p>
+        <p class="center">www.linkedin.com/in/dariuswilliamsdev</p>
+    </footer>
     <script src="JS/script.js"></script>
 </body>
 </html>
