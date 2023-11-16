@@ -5,23 +5,18 @@
 
     // Img Element for port
     const portImg = document.querySelector("#portImg");
-    //console.log(portImg);
 
     // Before button
     const beforeButton = document.querySelector("#before-btn");
-    //console.log(beforeButton);
 
     // After button
     const afterButton = document.querySelector("#after-btn");
-    //console.log(afterButton);
 
     // Backward/left arrow button
     const backwardButton = document.querySelector("#portLeft");
-    //console.log(backwardButton);
 
     // Backward/Right arrow button
     const forwardButton = document.querySelector("#portRight");
-    //console.log(forwardButton);
 
     // Images
     const images = [
@@ -43,16 +38,8 @@
         },
     ]
 
+    
 //**********************************************************/
-
-// .setAttribute("class", `doNotDisplay`)
-// .removeAttribute("doNotDisplay")
-
-
-
-
-
-
 
 
 // Forward button
