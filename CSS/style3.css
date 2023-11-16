@@ -29,18 +29,13 @@ body {
         "middle middle middle"
         "bottom bottom bottom";
     grid-template-columns: auto ;
+    margin: 0 auto;
 }
 
 
 html {
     font-size: 62.5%;
 }
-
-body {
-    margin: 0 auto;
-}
-
-
 
 header {
     grid-area: top;
@@ -256,4 +251,31 @@ footer {
     min-height: 40px;
     padding: 0;
     margin: 0;
+}
+
+.doNotDisplay {
+    display: none;
+}
+
+@media only screen and (min-width: 761px) {
+    main {
+        display: none;
+    }
+
+    body {
+        background-color: rgb(235, 235, 235);
+        color: rgb(35, 35,35);
+    }
+
+    #constructionMessage {
+        display: block;
+        font-size: 6rem;
+        margin: 0 auto;
+        padding: 1.2em;
+        text-align: center;
+    }
+
+    footer {
+        display: none;
+    }
 }

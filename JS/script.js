@@ -45,9 +45,19 @@
 
 //**********************************************************/
 
+// .setAttribute("class", `doNotDisplay`)
+// .removeAttribute("doNotDisplay")
+
+
+
+
+
+
+
 
 // Forward button
     //function
+    // functionality to move images using the right arrow button
     function forwardImages() {
     if (imagesIndex === 0 || imagesIndex <= images.length-3) {
         imagesIndex++;
@@ -58,7 +68,11 @@
             portImg.setAttribute("src", `${images[imagesIndex].before}`);
         }
         // Make sure backward button is enabled
-        backwardButton.removeAttribute("disabled");
+        // *********************************************Change code below this line
+        // backwardButton.classList.remove("doNotDisplay");
+        // backwardButton.removeAttribute("disabled");
+        backwardButton.classList.remove("doNotDisplay");
+        //.removeAttribute("disabled");
         console.log("enabled backward button");
         
     } else {
@@ -73,7 +87,8 @@
         console.log(portImg.setAttribute("src", `${images[imagesIndex].before}`));
         }
         // Add something to disable button here.
-        forwardButton.setAttribute("disabled", "");
+        // forwardButton.setAttribute("disabled", "");
+        forwardButton.setAttribute("class", `doNotDisplay portDir`);
         console.log("disabled forward button");
     }
 }
@@ -97,7 +112,9 @@
             //console.log(portImg.setAttribute("src", `${images[imagesIndex].before}`));
         }
         // Disable backward button here
-        backwardButton.setAttribute("disabled", "");
+        // backwardButton.setAttribute("disabled", "");
+        backwardButton.setAttribute("class", `doNotDisplay portDir`);
+        // backwardButton.setAttribute("class", `portDir`)
         console.log("disable backward button");
     } else {
         imagesIndex--;
@@ -109,7 +126,8 @@
         //console.log(portImg.setAttribute("src", `${images[imagesIndex].before}`));
         }
         // Enable forward button here
-        forwardButton.removeAttribute("disabled");
+        // forwardButton.removeAttribute("disabled");
+        forwardButton.classList.remove("doNotDisplay");
         console.log("enabled forward button");
     }
 }
