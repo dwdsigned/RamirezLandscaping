@@ -97,7 +97,7 @@ main p {
 figure {
     margin: 0 auto;
     padding: 0;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .elevate {
@@ -265,5 +265,12 @@ footer p {
 
     footer {
         display: none;
+    }
+}
+
+@media (min-width: 281px) and (max-width:760px) {
+    .imgWide {
+        width: 100%;
+        height: 100%;
     }
 }
