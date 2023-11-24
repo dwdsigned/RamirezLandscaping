@@ -1,2 +1,2 @@
 # RamirezLandscaping  
-Creating a custom website for a landscaper
+Custom website for a landscaper
