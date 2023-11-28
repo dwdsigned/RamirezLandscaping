@@ -124,6 +124,14 @@ figure {
     margin-bottom: 2em;
 }
 
+.lessMarginBottom {
+    margin-bottom: 0;
+}
+
+.secDescription {
+    margin-top: 0;
+}
+
 hr {
     border-top: none;
     border-left: none;
@@ -150,6 +158,11 @@ hr {
 
 .imageLeft {
     margin-right: 40%;
+}
+
+.imageBigger {
+    width: 95%;
+    height: 95%;
 }
 
 .buttonMargin {
@@ -296,7 +309,7 @@ footer a:active {
     }
 }
 
-@media (min-width: 281px) and (max-width:760px) {
+@media (min-width: 281px) and (max-width:599px) {
     .imgWide {
         width: 100%;
         height: 100%;
@@ -304,10 +317,65 @@ footer a:active {
 }
 
 
-/* @media (min-width: 281px) and (max-width:760px) {
-    .imgWide {
-        width: 100%;
-        height: 100%;
+@media (min-width: 330px) and (max-width:399px) {
+    .elevate h1 {
+        font-size: 2.9rem;
     }
-} */
+
+    main h2 {
+        font-size: 2.9rem;
+    }
+
+    main p {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 400px) and (max-width:499px) {
+    .elevate h1 {
+        font-size: 3.6rem;
+    }
+
+    main h2 {
+        font-size: 4.5rem;
+    }
+
+    main p {
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width:599px) {
+    .elevate h1 {
+        font-size: 4.5rem;
+    }
+
+    main h2 {
+        font-size: 5.4rem;
+    }
+
+    main p {
+        font-size: 4.2rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width:760px) {
+    .elevate h1 {
+        font-size: 5.5rem;
+    }
+
+    main h2 {
+        font-size: 6.4rem;
+    }
+
+    main p {
+        font-size: 4.9rem;
+    }
+
+    /* .imgWide {
+        width: 100%;
+        height: 85%;
+        
+    } */
+}
 
