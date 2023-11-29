@@ -23,18 +23,26 @@
         {
             before: "Images/beforeSod.png",
             after: "Images/afterSod.png",
+            altTextBefore: "laying sod before",
+            altTextAfter: "laying sod after"
         },
         {
             before: "Images/beforeHardscaped.png",
             after: "Images/afterHardscaped.png",
+            altTextBefore: "hardscaped walkway before",
+            altTextAfter: "hardscaped walkway after"
         },
         {
             before: "Images/beforeHouseSod.png",
             after: "Images/afterHouseSod.png",
+            altTextBefore: "sod infront of house before",
+            altTextAfter: "sod infront of house after",
         },
         {
             before: "Images/beforeGarden.png",
             after: "Images/afterGarden.png",
+            altTextBefore: "garden before",
+            altTextAfter: "garden after"
         },
     ]
 
