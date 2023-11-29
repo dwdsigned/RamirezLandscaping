@@ -333,7 +333,6 @@ footer a:active {
     }
 }
 
-
 @media (min-width: 330px) and (max-width:399px) {
     .elevate h1 {
         font-size: 2.9rem;
@@ -403,6 +402,10 @@ footer a:active {
 }
 
 @media only screen and (min-width: 721px) {
+    header {
+        height: 15vh;
+    }
+
     #section1 {
         display: flex;
     }
@@ -431,9 +434,7 @@ footer a:active {
         font-size: 2.7rem;
     }
 
-    header {
-        height: 15vh;
-    }
+    
 
     .spanish {
         font-size: 1.5rem;
@@ -445,9 +446,47 @@ footer a:active {
 
     #section2Div p {
         max-width: 85%;
-        margin-left: 2em;
+        /* margin-left: 2em; */
         text-align: center;
-    }    
+    }
+
+    #section2Div .leftMarg {
+        margin-left: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    /* **Test below** */
+    main h2 {
+        font-size: 6.4rem;
+    }
+
+    main p {
+        font-size: 3rem;
+    }
+
+    #width33 {
+        margin-left: 7em;
+        margin-right: 5em;
+    }
+
+    #width33 p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .spaceBetweenItems {
+        margin: 0;
+    }
+
+    /* .arBigger {
+        aspect-ratio: auto;
+        height: 250px;
+        width: 250px;
+    } */
+
+    /* **Test above** */
 
     .flexNone {
         display: none;
