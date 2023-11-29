@@ -439,6 +439,31 @@ footer a:active {
         font-size: 1.5rem;
     }
 
+    #section2Div {
+        display: flex;
+    }
+
+    #section2Div p {
+        max-width: 85%;
+        margin-left: 2em;
+        text-align: center;
+    }    
+
+    .flexNone {
+        display: none;
+    }
+
+    .imageBigger {
+        width: 40%;
+        height: 90%;
+    }
+
+    hr {
+        width: 100%;
+        /* border-color: #006837;
+        border-width: .5em; */
+        
+    }
 }
 
 @media only screen and (min-width: 800px) {
