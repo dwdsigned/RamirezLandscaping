@@ -53,14 +53,15 @@ nav li {
 }
 
 nav button {
-    border-radius: 30px 0;
+    border-radius: 30px 7px;
     font-size: 1.5rem;
     padding: .5em;
     margin-bottom: .35em;
     color: rgb(230, 230, 230);
     background-color: rgb(210, 150, 45);
     font-family: 'Playfair Display', serif;
-    border-color: rgb(210, 150, 45);
+    border: none;
+    /* border-color: rgb(210, 150, 45); */
 }
 
 a.spanish:link {
@@ -118,14 +119,15 @@ figure {
 }
 
 .elevate button {
-    border-radius: 30px 0;
+    border-radius: 30px 7px;
     font-size: 1.5rem;
     padding: .5em;
     margin-bottom: 2em;
     color: rgb(230, 230, 230);
     background-color: rgb(210, 150, 45);
     font-family: 'Playfair Display', serif;
-    border-color: rgb(210, 150, 45);
+    border: none;
+    /* border-color: rgb(210, 150, 45); */
 }
 
 #section1 img {
@@ -420,7 +422,22 @@ footer a:active {
     .elevate p {
         font-size: 3rem;
     }
+
+    .elevate button {
+        font-size: 3rem;
+    }
     
+    nav button {
+        font-size: 2.7rem;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    .spanish {
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -431,6 +448,14 @@ footer a:active {
 
     .elevate p {
         font-size: 3rem;
+    }
+
+    nav button {
+        font-size: 2.9rem;
+    }
+
+    .spanish {
+        font-size: 1.5rem;
     }
 }
 
