@@ -434,8 +434,6 @@ footer a:active {
         font-size: 2.7rem;
     }
 
-    
-
     .spanish {
         font-size: 1.5rem;
     }
@@ -486,13 +484,27 @@ footer a:active {
         width: 250px;
     } */
 
+    /* .imageBigger {
+        width: 90%;
+        height: 90%;
+    }
+    
+    .arBigger {
+        aspect-ratio: auto;
+        height: 200px;
+        width: 200px;
+    } */
+
     /* **Test above** */
 
     .flexNone {
         display: none;
     }
 
+    /* Play with this imageBigger to get correct image size */
     .imageBigger {
+        height: 200px;
+        width: 250px;
         width: 40%;
         height: 90%;
     }
