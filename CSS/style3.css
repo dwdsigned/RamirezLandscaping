@@ -402,9 +402,9 @@ footer a:active {
 }
 
 @media only screen and (min-width: 721px) {
-    header {
+    /* header {
         height: 15vh;
-    }
+    } */
 
     #section1 {
         display: flex;
@@ -431,7 +431,7 @@ footer a:active {
     }
     
     nav button {
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
 
     .spanish {
@@ -526,9 +526,9 @@ footer a:active {
         font-size: 3rem;
     }
 
-    nav button {
+    /* nav button {
         font-size: 2.9rem;
-    }
+    } */
 
     .spanish {
         font-size: 1.5rem;
