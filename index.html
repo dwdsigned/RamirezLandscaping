@@ -15,12 +15,12 @@
             <img src="Images/TypeLogoShadow.png" alt="Ramirez Landscaping logo" width="205" height="34" class="logoImg">
             <ul>
                 <li><a href="tel:" target="_blank"><button id="firstCallButton" class="btn-qt qt1">Call for a Quote</button></a></li>
+                <li><p id="secondCallButton">Call 864-602-3647 for a Quote</p></li>
                 <li><a href="https://www.facebook.com/messages/t/100019698247988/" target="_blank"><button id="messageButton" class="btn-qt qt1 doNotDisplay">Message for a Quote</button></a></li>
                 <li ><a href="spanish.html" class="spanish">Haga clic aquí para español</a></li>
             </ul>
         </nav>
     </header>
-    <p id="constructionMessage" class="doNotDisplay">This Website is currently under construction; please view it on a device with a smaller screen, or in portrait mode, until we finish construction of this website. Thank you.</p>
     <main>
         <section id="section1" class="section1">
             <div class="elevate">
@@ -49,7 +49,8 @@
                                 <!-- 57.1 x 41.5-->
                                 <img src="Images/plantingTreeorange.png" alt="stickman planting a tree" width="87" height="61" class="spaceBetweenItems arBigger">
                             </figure>
-                            <p>Get personalized and tailored services based on your needs</p>
+                            <p>Get personalized services</p>
+                            <!-- <p>Get personalized and tailored services based on your needs</p> -->
                         </div>
                         <div class="center">
                             <figure>
@@ -65,29 +66,35 @@
                 <h2 class="lessMarginBottom">Services</h2>
                     <p class="secDescription">Our services include:</p>
             </div>
-            <div class="center" class="flexIt">
-                <div>
-                    <figure>
-                        <img src="Images/rakingLeavesOrange.png" width="90" height="107" class="imageBigger" alt="stickman raking leaves">
-                    </figure>
+
+            <div id="section3Div">
+                <div class="center" class="flexIt">
+                    <div class="thirdWidth">
+                        <figure>
+                            <img src="Images/rakingLeavesOrange.png" width="90" height="107" class="imageBigger rakeLeaves" alt="stickman raking leaves">
+                        </figure>
+                    </div>
+                        <p>Keeping your landscape clean and maintained, whether commercial or residential</p>
+                        <!-- <p>Keeping your landscape clean and maintained, whether commercial or residential</p> -->
                 </div>
-                    <p>Keeping your landscape clean and maintained, whether commercial or residential</p>
-                    <!-- <p>Keeping your landscape clean and maintained, whether commercial or residential</p> -->
-            </div>
-            <div class="center">
-                <div>
-                    <figure>
-                        <img src="Images/layingSodOrange.png" width="126" height="82" class="imageBigger" alt="stickman laying sod">
-                    </figure>
+    
+                <div class="center thirdWidth">
+                    <div>
+                        <figure>
+                            <img src="Images/layingSodOrange.png" width="126" height="82" class="imageBigger laySod" alt="stickman laying sod">
+                        </figure>
+                    </div>
+                    <p>Laying sod, mowing, and lawn maintenance</p>
                 </div>
-                <p>Laying sod, mowing, and lawn maintenance</p>
+    
+                <div class="center thirdWidth">
+                <figure>
+                    <img src="Images/hardscapingOrange.png" width="136" height="85" class="imageBigger layBrick" alt="stickman laying bricks">
+                </figure>
+                <p>Roof and gutter cleaning, hardscaping, and more!</p>
+                </div>
             </div>
-            <div class="center">
-            <figure>
-                <img src="Images/hardscapingOrange.png" width="136" height="85" class="imageBigger" alt="stickman laying bricks">
-            </figure>
-            <p>Roof and gutter cleaning, hardscaping, and more!</p>
-            </div>
+
         </section>
         <hr>
         <section id="section4">
@@ -95,7 +102,7 @@
                 <h2 class="lessMarginBottom">Portfolio</h2>
                     <p class="secDescription">Sample of my work:</p>
             </div>
-                <div>
+                <div id="imageSlider">
                     <div class="center buttonMargin">
                         <!-- <h3>View</h3> -->
                         <button disabled class="viewButton">Click to view:</button>
@@ -111,6 +118,16 @@
                             <button id="portRight" class="portDir">&gt;</button>
                         </figure>
                     </div>
+                </div>
+                <div class="container">
+                    <img src="Images\afterHardscaped.png" alt="brick walkway">
+                    <img src="Images\afterGarden.png" alt="garden with mulch and decoration">
+                    <img src="Images\afterHouseSod.png" alt="image of after laying sod in front of a house">
+                    <img src="Images\baCover.jpg" alt="before and after images of laying sod around a house">
+                    <img src="Images\afterSod.png" alt="sod on the side of a house">
+                    <img src="Images\pinestraw.jpg" alt="after laying pinestraw">
+                    <img src="Images\cleanGutter.jpg" alt="clean gutters and roof">
+                    <img src="Images\subDivision.jpg" alt="landscaping work in a subdivision">
                 </div>
         </section>
     </main>
