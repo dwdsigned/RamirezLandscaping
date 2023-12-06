@@ -16,12 +16,15 @@ html {
     font-size: 62.5%;
 }
 
+#logoLink {
+    display:contents;
+}
+
 header {
     grid-area: top;
     background-color: #006837;
     position: sticky;
     top: 0;
-    height: 10vh;
     min-height: 70px;
     padding: 0;
     margin: 0;
