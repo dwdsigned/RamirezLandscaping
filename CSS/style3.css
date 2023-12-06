@@ -255,6 +255,7 @@ footer {
     min-height: 40px;
     padding: 0;
     margin: 0;
+    font-size: large;
 }
 
 footer p {
