@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramirez Landscaping Pro</title>
+    <link rel="icon" type="image/png" href="Images/leafIcon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -16,7 +17,6 @@
             <ul>
                 <li><a href="tel:" target="_blank"><button id="firstCallButton" class="btn-qt qt1">Call for a Quote</button></a></li>
                 <li><p id="secondCallButton">Call 864-602-3647 for a Quote</p></li>
-                <li><a href="https://www.facebook.com/messages/t/100019698247988/" target="_blank"><button id="messageButton" class="btn-qt qt1 doNotDisplay">Message for a Quote</button></a></li>
                 <li ><a href="spanish.html" class="spanish">Haga clic aquí para español</a></li>
             </ul>
         </nav>
@@ -26,7 +26,8 @@
             <div class="elevate">
                 <h1>Elevate Your Landscape</h1>
                 <p>Transforming Your Outdoor Space with Expertise and Experience</p>
-                <button class="btn-qt">Call for a Quote</button>
+                <button class="btn-qt" id="elevateButton">Call for a Quote</button>
+                <a href="https://www.facebook.com/messages/t/100019698247988/" target="_blank"><button class="btn-qt" id="emailButton" >Message for a Quote</button></a>
             </div>
             <figure class="center"><img src="Images/afterGarden.png" alt="garden with mulch" width="254" height="338" class="imgWide"></figure>
         </section>
@@ -66,7 +67,6 @@
                 <h2 class="lessMarginBottom">Services</h2>
                     <p class="secDescription">Our services include:</p>
             </div>
-
             <div id="section3Div">
                 <div class="center" class="flexIt">
                     <div class="thirdWidth">
@@ -75,7 +75,6 @@
                         </figure>
                     </div>
                         <p>Keeping your landscape clean and maintained, whether commercial or residential</p>
-                        <!-- <p>Keeping your landscape clean and maintained, whether commercial or residential</p> -->
                 </div>
     
                 <div class="center thirdWidth">
@@ -104,7 +103,6 @@
             </div>
                 <div id="imageSlider">
                     <div class="center buttonMargin">
-                        <!-- <h3>View</h3> -->
                         <button disabled class="viewButton">Click to view:</button>
                         <br>
                         <button id="before-btn" class="portNotActive">Before</button>
@@ -112,9 +110,8 @@
                     </div>
                     <div class="center portDiv">
                         <figure class="portfolioCar">
-                            <!-- <button class="portDir portRight">&gt;</button> -->
                             <button id="portLeft" class="portDir doNotDisplay">&lt;</button>
-                            <img id="portImg" src="Images/afterSod.png" width="253.63" height="338.17" class="imgWide">
+                            <img id="portImg" src="Images/afterSod.png" width="253.63" height="338.17" class="imgWide" alt="picture of my work, before or after">
                             <button id="portRight" class="portDir">&gt;</button>
                         </figure>
                     </div>
@@ -134,6 +131,7 @@
     <footer>
         <p class="center">COPYRIGHT &#169;</p>
         <p class="center"><a href="https://www.linkedin.com/in/dariuswilliamsdev" target="_blank">Website by Darius Williams</a></p>
+        <p class="center"><a href="https://www.linkedin.com/in/dariuswilliamsdev" target="_blank">Please click here to send me a message on LinkedIn for accessibility issues.</a></p>
     </footer>
     <script src="JS/script.js"></script>
 </body>

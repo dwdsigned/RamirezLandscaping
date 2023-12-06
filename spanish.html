@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramirez Landscaping Pro</title>
+    <link rel="icon" type="image/png" href="Images/leafIcon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -15,102 +16,122 @@
             <img src="Images/TypeLogoShadow.png" alt="Ramirez Landscaping logo" width="205" height="34" class="logoImg">
             <ul>
                 <li><a href="tel:" target="_blank"><button id="firstCallButton" class="btn-qt qt1">Cotización Gratis</button></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100019698247988" target="_blank"><button id="messageButton" class="btn-qt qt1 doNotDisplay">Mensaje para cotización</button></a></li>
+                <li><p id="secondCallButton">Llame al 864-602-3647 para una cotización</p></li>
                 <li ><a href="index.html" class="spanish">Click here for English</a></li>
             </ul>
         </nav>
     </header>
-    <p id="constructionMessage" class="doNotDisplay">Este sitio web se encuentra en construcción; Véalo en un dispositivo con una pantalla más pequeña o en modo vertical hasta que finalicemos la construcción de este sitio web. Gracias.</p>
     <main>
         <section id="section1" class="section1">
             <div class="elevate">
-                <h1>Eleve su paisaje</h1>
+                <h1>Eleva tu paisaje</h1>
                 <p>Transformando su espacio al aire libre con conocimiento y experiencia</p>
-                <a href="tel:" target="_blank"><button class="btn-qt">Cotización Gratis</button></a>
+                <button class="btn-qt" id="elevateButton">Cotización Gratis</button>
+                <a href="https://www.facebook.com/messages/t/100019698247988/" target="_blank"><button class="btn-qt" id="emailButton" >Mensaje para una cotización</button></a>
             </div>
-            <figure><img src="Images/afterGarden.png" alt="garden with mulch" width="254" height="338"></figure>
+            <figure class="center"><img src="Images/afterGarden.png" alt="garden with mulch" width="254" height="338" class="imgWide"></figure>
         </section>
         <hr>
         <section id="section2">
                 <h2 class="center">Por qué elegirnos</h2>
-                    <div class="center">
-                        <figure>
-                            <img src="Images/twoTalkingOrange.png" alt="two people talking while sitting on chairs" width="170.4" height="119">
-                        </figure>
-                        <p>Como pequeña empresa local, puede estar seguro de que recibirá la atención que se merece.</p>
-                    </div>
+                    <div id="section2Div">
                         <div class="center">
                             <figure>
-                                <!--50 x 49-->
-                                <img src="Images/wheelBarroworange.png" alt="emptying a wheelbarrow" width="80" height="78.4">
-                                <!-- 50 x 42.3-->
-                                <img src="Images/hedgeTrimmer.png" alt="man using a hedgetrimmer" width="80" height="68">
-                                <!-- 57.1 x 41.5-->
-                                <img src="Images/plantingTreeorange.png" alt="man planting a tree" width="87" height="61">
+                                <img src="Images/twoTalkingOrange.png" alt="two people talking while sitting on chairs" width="170.4" height="119" class="imageBigger">
                             </figure>
-                        <p>Obtenga servicios personalizados y adaptados a sus necesidades</p>
+                            <p class="leftMarg">Como pequeña empresa local, puede estar seguro de que recibirá la atención que se merece.</p>
                         </div>
-                    <div class="center">
-                        <figure>
-                            <img src="Images/talkingPhoneOrange.png" width="137.3" height="118">
-                        </figure>
-                        <p>Como propietario, estoy a sólo una llamada de distancia.</p>
+                        <div class="center" id="width33">
+                            <figure>
+                                <!--50 x 49-->
+                                <img src="Images/wheelBarroworange.png" alt="stickman emptying a wheelbarrow" width="80" height="78.4" class="spaceBetweenItems flexNone doNotDisplay arBigger">
+                                <!-- 50 x 42.3-->
+                                <img src="Images/hedgeTrimmer.png" alt="stickman using a hedgetrimmer" width="80" height="68" class="spaceBetweenItems flexNone doNotDisplay arBigger">
+                                <!-- 57.1 x 41.5-->
+                                <img src="Images/plantingTreeorange.png" alt="stickman planting a tree" width="87" height="61" class="spaceBetweenItems arBigger">
+                            </figure>
+                            <p>Obtenga servicios personalizados</p>
+                            <!-- <p>Get personalized and tailored services based on your needs</p> -->
+                        </div>
+                        <div class="center">
+                            <figure>
+                                <img src="Images/talkingPhoneOrange.png" width="137.3" height="118" class="imageBigger" alt="two stickmen talking on the phone to each other">
+                            </figure>
+                            <p class="leftMarg">Como propietario, estoy a sólo una llamada de distancia.</p>
+                        </div>
                     </div>
         </section>
         <hr>
         <section id="section3">
             <div class="center">
-                <h2>Servicios</h2>
-                    <p>Nuestros servicios incluyen:</p>
+                <h2 class="lessMarginBottom">Servicios</h2>
+                    <p class="secDescription">Nuestros servicios incluyen:</p>
             </div>
-            <div class="center">
-                    <div class="imageRight">
+            <div id="section3Div">
+                <div class="center" class="flexIt">
+                    <div class="thirdWidth">
                         <figure>
-                            <img src="Images/rakingLeavesOrange.png" width="90" height="107">
+                            <img src="Images/rakingLeavesOrange.png" width="90" height="107" class="imageBigger rakeLeaves" alt="stickman raking leaves">
                         </figure>
                     </div>
-                    <p>Mantener su jardín limpio y mantenido, ya sea comercial o residencial.</p>
-            </div>
-            <div class="center">
-                <div class="imageLeft">
-                    <figure>
-                        <img src="Images/layingSodOrange.png" width="126" height="82">
-                    </figure>
+                        <p>Mantener su jardín limpio y mantenido, ya sea comercial o residencial.</p>
                 </div>
-                <p>Colocación de césped, corte y mantenimiento del césped.</p>
+    
+                <div class="center thirdWidth">
+                    <div>
+                        <figure>
+                            <img src="Images/layingSodOrange.png" width="126" height="82" class="imageBigger laySod" alt="stickman laying sod">
+                        </figure>
+                    </div>
+                    <p>Colocación de césped, corte y mantenimiento del césped.</p>
+                </div>
+    
+                <div class="center thirdWidth">
+                <figure>
+                    <img src="Images/hardscapingOrange.png" width="136" height="85" class="imageBigger layBrick" alt="stickman laying bricks">
+                </figure>
+                <p>¡Limpieza de techos y canaletas, jardinería y más!</p>
+                </div>
             </div>
-            <div class="center">
-            <figure>
-                <img src="Images/hardscapingOrange.png" width="136" height="85">
-            </figure>
-            <p>¡Limpieza de techos y canaletas, jardinería y más!</p>
-            </div>
+
         </section>
         <hr>
         <section id="section4">
             <div class="center">
-                <h2>Portafolio</h2>
-                    <p>Muestra de mi trabajo:</p>
+                <h2 class="lessMarginBottom">Portafolio</h2>
+                    <p class="secDescription">Muestra de mi trabajo:</p>
             </div>
-                <div>
+                <div id="imageSlider">
                     <div class="center buttonMargin">
+                        <button disabled class="viewButton">Click para ver:</button>
+                        <br>
                         <button id="before-btn" class="portNotActive">Antes</button>
                         <button id="after-btn" class="portActive">Después</button>
                     </div>
                     <div class="center portDiv">
                         <figure class="portfolioCar">
-                            <!-- <button class="portDir portRight">&gt;</button> -->
                             <button id="portLeft" class="portDir doNotDisplay">&lt;</button>
-                            <img id="portImg" src="Images/afterSod.png" width="253.63" height="338.17" >
+                            <img id="portImg" src="Images/afterSod.png" width="253.63" height="338.17" class="imgWide" alt="picture of my work, before or after">
                             <button id="portRight" class="portDir">&gt;</button>
                         </figure>
                     </div>
                 </div>
+                <div class="container">
+                    <img src="Images\afterHardscaped.png" alt="brick walkway">
+                    <img src="Images\afterGarden.png" alt="garden with mulch and decoration">
+                    <img src="Images\afterHouseSod.png" alt="image of after laying sod in front of a house">
+                    <img src="Images\baCover.jpg" alt="before and after images of laying sod around a house">
+                    <img src="Images\afterSod.png" alt="sod on the side of a house">
+                    <img src="Images\pinestraw.jpg" alt="after laying pinestraw">
+                    <img src="Images\cleanGutter.jpg" alt="clean gutters and roof">
+                    <img src="Images\subDivision.jpg" alt="landscaping work in a subdivision">
+                </div>
         </section>
     </main>
     <footer>
-        <p class="center">Sitio web de Darius Williams</p>
-        <p class="center">www.linkedin.com/in/dariuswilliamsdev</p>
+        <p class="center">COPYRIGHT &#169;</p>
+        <p class="center"><a href="https://www.linkedin.com/in/dariuswilliamsdev" target="_blank">Sitio web de Darius Williams</a></p>
+        <p class="center"><a href="https://www.linkedin.com/in/dariuswilliamsdev" target="_blank">Haga clic aquí para enviarme un mensaje en LinkedIn sobre problemas de accesibilidad.</a></p>
     </footer>
     <script src="JS/script.js"></script>
 </body>
